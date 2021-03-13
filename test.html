@@ -1,0 +1,175 @@
+<html>
+<head>
+<style>
+.sig-indent {
+	margin-left: 3em !important;
+}
+.sig-line {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	white-space: pre-wrap;
+
+	border: solid;
+	border-width: 1px;
+	margin: 1px;
+}
+.sig-nowrap-container {
+	display: flex;
+	align-items: baseline;
+
+	border: solid;
+	border-width: 1px;
+	border-color: blue;
+	margin: 1px;
+}
+.sig-item {
+	display: inline;
+
+	border: solid;
+	border-width: 1px;
+	border-color: green;
+	margin: 1px;
+}
+.sig-nowrap-item {
+	display: inline;
+	white-space: nowrap;
+
+	border: solid;
+	border-width: 1px;
+	border-color: red;
+	margin: 1px;
+}
+</style>
+</head>
+<body>
+<div style="width: 50%;">
+
+<p>Class template, template parameters and base classes should wrap with hanging indent.</p>
+<dl class="cpp class"><dt id="_CPPv4I0000000000E1A"><span id="_CPPv3I0000000000E1A"></span><span id="_CPPv2I0000000000E1A"></span>
+<div class="sig-line">
+<div class="sig-nowrap-container">
+<div class="sig-nowrap-item"><span class="pre">template<span style="font-size: large;">&lt;</span></span></div><div class="sig-item"><div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T1</span></code><span class="pre">,</span></div> <div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T2</span></code><span class="pre">,</span></div> <div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T3</span></code><span class="pre">,</span></div> <div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T4</span></code><span class="pre">,</span></div> <div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T5</span></code><span class="pre">,</span></div> <div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T6</span></code><span class="pre">,</span></div> <div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T7</span></code><span class="pre">,</span></div> <div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T8</span></code><span class="pre">,</span></div> <div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T9</span></code><span class="pre">,</span></div> <div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T10</span></code><span class="pre">&gt;</span></div></div></div></div>
+<div class="sig-line">
+<div class="sig-nowrap-container">
+<div class="sig-nowrap-item"><em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">A</span></code> <span class="pre">: </span></div><div class="sig-item"><span class="pre">Base1</span><span class="pre">,</span> <span class="pre">Base2</span><span class="pre">,</span> <span class="pre">Base3</span><span class="pre">,</span> <span class="pre">Base4</span><span class="pre">,</span> <span class="pre">Base5</span><span class="pre">,</span> <span class="pre">Base6</span><span class="pre">,</span> <span class="pre">Base7</span><span class="pre">,</span> <span class="pre">Base8</span><span class="pre">,</span> <span class="pre">Base9</span><span class="pre">,</span> <span class="pre">Base10</span><a class="headerlink" href="#_CPPv4I0000000000E1A" title="Permalink to this definition">¶</a></div></div></div>
+</dt><dd></dd></dl>
+
+<p>Function with large return type, the parameters should wrap with hanging indent. The return type should be allowed to wrap to its own line.</p>
+<dl class="cpp function">
+<dt id="_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T">
+<span id="_CPPv3I0E1f1T1T1T1T1T1T1T1T1T1T"></span><span id="_CPPv2I0E1f1T1T1T1T1T1T1T1T1T1T"></span>
+<div class="sig-line"><div class="sig-nowrap-item"><span class="pre">template&lt;</span></div><div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T</span></code><span class="pre">&gt;</span></div></div>
+<div class="sig-line">
+<div class="sig-item"><span class="pre">std</span><span class="pre">::</span><span class="pre">enable_if</span><span class="pre">&lt;</span><span class="pre">std</span><span class="pre">::</span><span class="pre">conjunction</span><span class="pre">&lt;</span><span class="pre">Val1</span><span class="pre">,</span> <span class="pre">Val2</span><span class="pre">,</span> <span class="pre">Val3</span><span class="pre">,</span> <span class="pre">Val4</span><span class="pre">,</span> <span class="pre">Val5</span><span class="pre">,</span> <span class="pre">Val6</span><span class="pre">,</span> <span class="pre">Val7</span><span class="pre">,</span> <span class="pre">Val8</span><span class="pre">,</span> <span class="pre">Val9</span><span class="pre">,</span> <span class="pre">Val10</span><span class="pre">&gt;</span><span class="pre">::</span><span class="pre">value</span><span class="pre">&gt;</span><span class="pre">::</span><span class="pre">type</span></div> 
+<div class="sig-nowrap-container">
+<div class="sig-nowrap-item"><code class="sig-name descname"><span class="pre">f</span></code><span class="sig-paren">(</span></div>
+<div class="sig-item"><a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg1</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg2</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg3</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg4</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg5</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg6</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg7</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg8</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg9</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg10</span></em><span class="sig-paren">)</span>
+<em class="property"><span class="pre">noexcept</span></em><span class="pre">(</span><code class="sig-prename descclassname"><span class="pre">std</span><span class="pre">::</span><span class="pre">conjunction</span><span class="pre">&lt;</span><span class="pre">Val1</span><span class="pre">,</span> <span class="pre">Val2</span><span class="pre">,</span> <span class="pre">Val3</span><span class="pre">,</span> <span class="pre">Val4</span><span class="pre">,</span> <span class="pre">Val5</span><span class="pre">,</span> <span class="pre">Val6</span><span class="pre">,</span> <span class="pre">Val7</span><span class="pre">,</span> <span class="pre">Val8</span><span class="pre">,</span> <span class="pre">Val9</span><span class="pre">,</span> <span class="pre">Val10</span><span class="pre">&gt;</span><code class="sig-prename descclassname"><span class="pre">::</span></code></code><code class="sig-name descname"><span class="pre">value</span></code><span class="pre">)</span><a class="headerlink" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="Permalink to this definition">¶</a></div></div>
+</div>
+</dt>
+<dd></dd></dl>
+
+<p>Function with small'ish return type, the parameters should wrap with hanging indent. The return type should be allowed to wrap to its own line.</p>
+<dl class="cpp function">
+<dt id="_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T">
+<span id="_CPPv3I0E1f1T1T1T1T1T1T1T1T1T1T"></span><span id="_CPPv2I0E1f1T1T1T1T1T1T1T1T1T1T"></span>
+<div class="sig-line"><div class="sig-nowrap-item"><span class="pre">template&lt;</span></div><div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T</span></code><span class="pre">&gt;</span></div></div>
+<div class="sig-line">
+<div class="sig-item"><span class="pre">std</span><span class="pre">::</span><span class="pre">enable_if</span><span class="pre">&lt;</span><span class="pre">std</span><span class="pre">::</span><span class="pre">conjunction</span><span class="pre">&lt;</span><span class="pre">&gt;</span><span class="pre">::</span><span class="pre">value</span><span class="pre">&gt;</span><span class="pre">::</span><span class="pre">type</span></div> 
+<div class="sig-nowrap-container">
+<div class="sig-nowrap-item"><code class="sig-name descname"><span class="pre">f</span></code><span class="sig-paren">(</span></div>
+<div class="sig-item"><a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg1</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg2</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg3</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg4</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg5</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg6</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg7</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg8</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg9</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg10</span></em><span class="sig-paren">)</span>
+<em class="property"><span class="pre">noexcept</span></em><span class="pre">(</span><code class="sig-prename descclassname"><span class="pre">std</span><span class="pre">::</span><span class="pre">conjunction</span><span class="pre">&lt;</span><span class="pre">Val1</span><span class="pre">,</span> <span class="pre">Val2</span><span class="pre">,</span> <span class="pre">Val3</span><span class="pre">,</span> <span class="pre">Val4</span><span class="pre">,</span> <span class="pre">Val5</span><span class="pre">,</span> <span class="pre">Val6</span><span class="pre">,</span> <span class="pre">Val7</span><span class="pre">,</span> <span class="pre">Val8</span><span class="pre">,</span> <span class="pre">Val9</span><span class="pre">,</span> <span class="pre">Val10</span><span class="pre">&gt;</span><code class="sig-prename descclassname"><span class="pre">::</span></code></code><code class="sig-name descname"><span class="pre">value</span></code><span class="pre">)</span><a class="headerlink" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="Permalink to this definition">¶</a></div></div>
+</div>
+</dt>
+<dd></dd></dl>
+
+<p>As the previous, but where the return type is not allowed to wrap to its own line.</p>
+<dl class="cpp function">
+<dt id="_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T">
+<span id="_CPPv3I0E1f1T1T1T1T1T1T1T1T1T1T"></span><span id="_CPPv2I0E1f1T1T1T1T1T1T1T1T1T1T"></span>
+<div class="sig-line"><div class="sig-nowrap-item"><span class="pre">template&lt;</span></div><div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T</span></code><span class="pre">&gt;</span></div></div>
+<div class="sig-line">
+<div class="sig-nowrap-container">
+<div class="sig-item"><span class="pre">std</span><span class="pre">::</span><span class="pre">enable_if</span><span class="pre">&lt;</span><span class="pre">std</span><span class="pre">::</span><span class="pre">conjunction</span><span class="pre">&lt;</span><span class="pre">&gt;</span><span class="pre">::</span><span class="pre">value</span><span class="pre">&gt;</span><span class="pre">::</span><span class="pre">type</span></div> 
+<div class="sig-nowrap-item"><code class="sig-name descname"><span class="pre">f</span></code><span class="sig-paren">(</span></div>
+<div class="sig-item"><a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg1</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg2</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg3</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg4</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg5</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg6</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg7</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg8</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg9</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg10</span></em><span class="sig-paren">)</span>
+<em class="property"><span class="pre">noexcept</span></em><span class="pre">(</span><code class="sig-prename descclassname"><span class="pre">std</span><span class="pre">::</span><span class="pre">conjunction</span><span class="pre">&lt;</span><span class="pre">Val1</span><span class="pre">,</span> <span class="pre">Val2</span><span class="pre">,</span> <span class="pre">Val3</span><span class="pre">,</span> <span class="pre">Val4</span><span class="pre">,</span> <span class="pre">Val5</span><span class="pre">,</span> <span class="pre">Val6</span><span class="pre">,</span> <span class="pre">Val7</span><span class="pre">,</span> <span class="pre">Val8</span><span class="pre">,</span> <span class="pre">Val9</span><span class="pre">,</span> <span class="pre">Val10</span><span class="pre">&gt;</span><code class="sig-prename descclassname"><span class="pre">::</span></code></code><code class="sig-name descname"><span class="pre">value</span></code><span class="pre">)</span><a class="headerlink" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="Permalink to this definition">¶</a></div></div>
+</div>
+</dt>
+<dd></dd></dl>
+
+<p>Function also with small parameter list, return type wrapping to own line.</p>
+<dl class="cpp function">
+<dt id="_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T">
+<span id="_CPPv3I0E1f1T1T1T1T1T1T1T1T1T1T"></span><span id="_CPPv2I0E1f1T1T1T1T1T1T1T1T1T1T"></span>
+<div class="sig-line"><div class="sig-nowrap-item"><span class="pre">template&lt;</span></div><div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T</span></code><span class="pre">&gt;</span></div></div>
+<div class="sig-line">
+<div class="sig-item"><span class="pre">std</span><span class="pre">::</span><span class="pre">enable_if</span><span class="pre">&lt;</span><span class="pre">std</span><span class="pre">::</span><span class="pre">conjunction</span><span class="pre">&lt;</span><span class="pre">&gt;</span><span class="pre">::</span><span class="pre">value</span><span class="pre">&gt;</span><span class="pre">::</span><span class="pre">type</span></div> 
+<div class="sig-nowrap-container">
+<div class="sig-nowrap-item"><code class="sig-name descname"><span class="pre">f</span></code><span class="sig-paren">(</span></div>
+<div class="sig-item"><a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg1</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg2</span></em><span class="sig-paren">)</span>
+<em class="property"><span class="pre">noexcept</span></em><a class="headerlink" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="Permalink to this definition">¶</a></div></div>
+</div>
+</dt>
+<dd></dd></dl>
+
+<p>Function also with small parameter list, without return type wrapping to own line.</p>
+<dl class="cpp function">
+<dt id="_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T">
+<span id="_CPPv3I0E1f1T1T1T1T1T1T1T1T1T1T"></span><span id="_CPPv2I0E1f1T1T1T1T1T1T1T1T1T1T"></span>
+<div class="sig-line"><div class="sig-nowrap-item"><span class="pre">template&lt;</span></div><div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T</span></code><span class="pre">&gt;</span></div></div>
+<div class="sig-line">
+<div class="sig-nowrap-container">
+<div class="sig-item"><span class="pre">std</span><span class="pre">::</span><span class="pre">enable_if</span><span class="pre">&lt;</span><span class="pre">std</span><span class="pre">::</span><span class="pre">conjunction</span><span class="pre">&lt;</span><span class="pre">&gt;</span><span class="pre">::</span><span class="pre">value</span><span class="pre">&gt;</span><span class="pre">::</span><span class="pre">type</span></div> 
+<div class="sig-nowrap-item"><code class="sig-name descname"><span class="pre">f</span></code><span class="sig-paren">(</span></div>
+<div class="sig-item"><a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg1</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg2</span></em><span class="sig-paren">)</span>
+<em class="property"><span class="pre">noexcept</span></em><a class="headerlink" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="Permalink to this definition">¶</a></div></div>
+</div>
+</dt>
+<dd></dd></dl>
+
+<p>Function, with noexcept allowed to wrap to own line as well.</p>
+<dl class="cpp function">
+<dt id="_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T">
+<span id="_CPPv3I0E1f1T1T1T1T1T1T1T1T1T1T"></span><span id="_CPPv2I0E1f1T1T1T1T1T1T1T1T1T1T"></span>
+<div class="sig-line"><div class="sig-nowrap-item"><span class="pre">template&lt;</span></div><div class="sig-item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T</span></code><span class="pre">&gt;</span></div></div>
+<div class="sig-line">
+<div class="sig-item"><span class="pre">std</span><span class="pre">::</span><span class="pre">enable_if</span><span class="pre">&lt;</span><span class="pre">std</span><span class="pre">::</span><span class="pre">conjunction</span><span class="pre">&lt;</span><span class="pre">&gt;</span><span class="pre">::</span><span class="pre">value</span><span class="pre">&gt;</span><span class="pre">::</span><span class="pre">type</span></div> 
+<div class="sig-nowrap-container">
+<div class="sig-nowrap-item"><code class="sig-name descname"><span class="pre">f</span></code><span class="sig-paren">(</span></div>
+<div class="sig-item"><a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg1</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg2</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg3</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg4</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg5</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg6</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg7</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg8</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg9</span></em>, <a class="reference internal" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="f::T"><span class="pre">T</span></a> <em><span class="pre">arg10</span></em><span class="sig-paren">)</span></div>
+</div>
+<div class="sig-item"><em class="property"><span class="pre">noexcept</span></em><span class="pre">(</span><code class="sig-prename descclassname"><span class="pre">std</span><span class="pre">::</span><span class="pre">conjunction</span><span class="pre">&lt;</span><span class="pre">Val1</span><span class="pre">,</span> <span class="pre">Val2</span><span class="pre">,</span> <span class="pre">Val3</span><span class="pre">,</span> <span class="pre">Val4</span><span class="pre">,</span> <span class="pre">Val5</span><span class="pre">,</span> <span class="pre">Val6</span><span class="pre">,</span> <span class="pre">Val7</span><span class="pre">,</span> <span class="pre">Val8</span><span class="pre">,</span> <span class="pre">Val9</span><span class="pre">,</span> <span class="pre">Val10</span><span class="pre">&gt;</span><code class="sig-prename descclassname"><span class="pre">::</span></code></code><code class="sig-name descname"><span class="pre">value</span></code><span class="pre">)</span><a class="headerlink" href="#_CPPv4I0E1fNSt9enable_ifINSt11conjunctionI4Val14Val24Val34Val44Val54Val64Val74Val84Val95Val10E5valueEE4typeE1T1T1T1T1T1T1T1T1T1T" title="Permalink to this definition">¶</a></div>
+</div>
+</dt>
+<dd></dd></dl>
+
+
+<p>Function with requires clause, the requires should be indented</p>
+  <dl class="cpp function">
+<dt id="_CPPv4I0EIQaa8SortableI1CE13SomethingElseI1CEE4sortvR1C">
+<div class="sig-line">
+<div class="sig-nowrap-container">
+<div class="sig-nowrap-item"><span class="pre">template&lt;</span></div><div class="item"><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">C</span></code><span class="pre">&gt;</span></div>
+</div>
+</div>
+<div class="sig-line sig-indent">
+<div class="sig-nowrap-container">
+<div class="sig-nowrap-item"><span class="pre">requires</span></div>
+<div class="sig-item"><span class="pre">Sortable</span><span class="pre">&lt;</span><a class="reference internal" href="#_CPPv4I0EIQaa8SortableI1CE13SomethingElseI1CEE4sortvR1C" title="sort::C"><span class="pre">C</span></a><span class="pre">&gt;</span> <span class="pre">&amp;&amp;</span> <span class="pre">SomethingElse</span><span class="pre">&lt;</span><a class="reference internal" href="#_CPPv4I0EIQaa8SortableI1CE13SomethingElseI1CEE4sortvR1C" title="sort::C"><span class="pre">C</span></a><span class="pre">&gt;</span></div>
+</div>
+</div>
+<div class="sig-line">
+<div class="sig-item"><span class="pre">void</span></div>
+<div class="sig-nowrap-container">
+<div class="sig-nowrap-item"><code class="sig-name descname"><span class="pre">sort</span></code><span class="sig-paren">(</span></div><div class="sig-item"><a class="reference internal" href="#_CPPv4I0EIQaa8SortableI1CE13SomethingElseI1CEE4sortvR1C" title="sort::C"><span class="pre">C</span></a> <span class="pre">&amp;</span><em><span class="pre">v</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EIQaa8SortableI1CE13SomethingElseI1CEE4sortvR1C" title="Permalink to this definition">¶</a></div>
+</div>
+</div>
+</dt>
+<dd></dd></dl>
+
+</div>
+</body>
+</html>
